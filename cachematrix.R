@@ -1,14 +1,14 @@
 makeCacheMatrix <- function( a = matrix() ) {
-				## Initialize the inverse property
+				
 x <- NULL
-				## Method to set the matrix
+				
 set <- function( matrix ) {
 a <<- matrix
 x <<- NULL
 }
-					## Method the get the matrix
+					
 get <- function() {
-					## Return the matrix
+					
 a
 }
 					
@@ -40,6 +40,6 @@ data <- x$get()
 a <- solve(data) %*% data
 									
 x$setInverse(a)
-								## Return the matrix
+								
 a
 }
